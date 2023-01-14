@@ -410,5 +410,95 @@ body {
   .timeline-block:hover::before {
     animation: circle 1.2s infinite;
   }
+    
+  
+  @keyframes circle {
+    0% {
+      box-shadow: 0 0 0 0px rgba(51, 52, 57, 1);
+    }
+    100% {
+      box-shadow: 0 0 0 6px rgba(51, 52, 57, 0);
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    html {
+      font-size: 90%;
+    }
+    .wrapper {
+      flex-direction: column;
+    }
+    .intro, .detail {
+      flex: 0 0 100%;
+      box-shadow: none;
+    }
+    .intro-section {
+      padding: 0 2rem;
+    }
+    .profile {
+      margin-bottom: 1rem;
+    }
+    .profile::after {
+      display: none;
+    }
+    .photo img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    html {
+      font-size: 80%;
+    }
+    .tool-list {
+      flex-wrap: wrap;
+    }
+    .tool-list > li {
+      flex: 0 0 33.33%;
+    }
+    .favor-list > li {
+      flex: 0 0 33.3333%;
+    }
+  }
+  @media (max-width: 500px) {
+    html {
+      font-size: 70%;
+    }
+  } 
+ /*social media*/
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+
+  .sicon {
+    text-align: right;
+    
+  }
   
  
