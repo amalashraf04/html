@@ -2,11 +2,19 @@
     padding: 0;
     margin: 0;
 }
-body{
-    background-image: url(/images/1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    object-fit: contain;
+body {
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: var(--color-gray-light-3);
+}
+/* CSS for header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f7f8;
+  padding-left:200px;
 }
 #logo{
     width: 30px;
