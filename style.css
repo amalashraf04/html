@@ -407,8 +407,9 @@ body {
   .timeline-block:hover::before {
     animation: circle 1.2s infinite;
   }
-    
-  
+    .detail-content h4{
+      line-height: 1.8em;
+}
   @keyframes circle {
     0% {
       box-shadow: 0 0 0 0px rgba(51, 52, 57, 1);
